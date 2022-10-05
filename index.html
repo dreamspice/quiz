@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="welcome-container">
+      <h1 class="welcome-container__heading">QUIZ v.1.0</h1>
+      <p class="welcome-container__text1">Masz 15 sekund na odpowiedź.</p>
+      <p class="welcome-container__text2">Gotowy?</p>
+      <button class="welcome-container__btn btn">START</button>
+    </div>
+    <div class="start-game-container hidden">
+      <div class="start-game-container__bar">
+        <img
+          class="start-game-container__bar--reload"
+          src="images/reload.svg"
+        />
+        <p><span class="start-game-container__bar--score">0</span>/5</p>
+        <p class="start-game-container__bar--timer">15</p>
+      </div>
+      <div class="start-game-container__for-question">
+        <p class="start-game-container__for-question--question"></p>
+      </div>
+      <div class="start-game-container__answers">
+        <div
+          class="start-game-container__answers--answer start-game-container__answers--answerA"
+        >
+          <div class="start-game-container__answers--circle">a.</div>
+          <p
+            class="start-game-container__answers--text start-game-container__answers--textA"
+          ></p>
+        </div>
+        <div
+          class="start-game-container__answers--answer start-game-container__answers--answerB"
+        >
+          <div class="start-game-container__answers--circle">b.</div>
+          <p
+            class="start-game-container__answers--text start-game-container__answers--textB"
+          ></p>
+        </div>
+        <div
+          class="start-game-container__answers--answer start-game-container__answers--answerC"
+        >
+          <div class="start-game-container__answers--circle">c.</div>
+          <p
+            class="start-game-container__answers--text start-game-container__answers--textC"
+          ></p>
+        </div>
+        <div
+          class="start-game-container__answers--answer start-game-container__answers--answerD"
+          style="border: none"
+        >
+          <div class="start-game-container__answers--circle">d.</div>
+          <p
+            class="start-game-container__answers--text start-game-container__answers--textD"
+          ></p>
+        </div>
+      </div>
+      <div class="start-game-container__next">
+        <button class="start-game-container__next--btn btn">NEXT</button>
+      </div>
+    </div>
+    <div class="THE-END-container hidden">
+      <h2>Dzięki za udział w quizie</h2>
+      <p>
+        Zdobyłeś <span class="THE-END-container--score"></span> gratuluję 👌
+      </p>
+    </div>
+    <div class="time-down-container hidden">
+      <p>Czas się skończył 🙄</p>
+    </div>
+  </body>
+</html>

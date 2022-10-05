@@ -1,0 +1,11 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css -w"
+  },
+  "author": "Maciek",
+  "license": "ISC"
+}
